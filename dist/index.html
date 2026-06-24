@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Untitled</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explorando Oceanía</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <!-- INICIO -->
+
+  <div id="inicio" class="pantalla activa">
+
+    <div class="overlay">
+
+        <h1>🌏 EXPLORANDO OCEANÍA</h1>
+
+        <p>
+            Descubre los increíbles animales,
+            invertebrados y especies vegetales que
+            habitan este continente.
+        </p>
+
+        <button class="btn-principal"
+                onclick="mostrarPantalla('menu')">
+            🌎 Comenzar
+        </button>
+
+    </div>
+
+</div>
+
+    <!-- MENÚ -->
+<div id="menu" class="pantalla">
+
+    <div class="overlay">
+
+        <h1>🌏 OCEANÍA</h1>
+
+        <p>
+            Oceanía es un continente formado por miles de islas ubicadas en el océano Pacífico.
+        </p>
+
+        <p>
+            Tiene muchos animales y plantas que no existen en otras partes del mundo.
+        </p>
+
+        <div class="menu-botones">
+
+            <button class="btn-categoria"
+                onclick="mostrarPantalla('invertebrados')">
+                🦀 Invertebrados
+            </button>
+
+            <button class="btn-categoria"
+                onclick="mostrarPantalla('vertebrados')">
+                🦘 Vertebrados
+            </button>
+
+            <button class="btn-categoria"
+                onclick="mostrarPantalla('plantas')">
+                🌿 Especies Vegetales
+            </button>
+
+            <button class="btn-juego"
+                onclick="mostrarPantalla('juego')">
+                🎮 Juego
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+    <!-- INVERTEBRADOS -->
+
+    <div id="invertebrados" class="pantalla">
+
+        <h2>🦀 Invertebrados de Oceanía</h2>
+
+        <div class="galeria">
+
+            <div class="tarjeta"
+                onclick="mostrarPantalla('babosa')">
+
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzbVmepPCj9R-o_sHnqBVbsNdk7ivqy7zjvg&s">
+
+                <h3>🐌 Babosa de Mar</h3>
+
+            </div>
+
+            <div class="tarjeta"
+                onclick="mostrarPantalla('cangrejo')">
+
+                <img src="https://i.redd.it/e5r2a6qjm1qy.jpg">
+
+                <h3>🦀 Cangrejo Cocotero</h3>
+
+            </div>
+
+        </div>
+
+        <button onclick="mostrarPantalla('menu')">
+            ⬅ Volver
+        </button>
+
+    </div>
+
+    <!-- VERTEBRADOS -->
+
+    <div id="vertebrados" class="pantalla">
+
+        <h2>🦘 Vertebrados de Oceanía</h2>
+
+        <div class="galeria">
+
+            <div class="tarjeta"
+                onclick="mostrarPantalla('lori')">
+
+                <img src="https://misanimales.com/wp-content/uploads/2022/10/lori-arcoiris-2.jpg">
+
+                <h3>🦜 Lori Arcoíris</h3>
+
+            </div>
+
+            <div class="tarjeta"
+                onclick="mostrarPantalla('canguro')">
+
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/5d/RedRoo.JPG">
+
+                <h3>🦘 Canguro Rojo</h3>
+
+            </div>
+
+            <div class="tarjeta"
+                onclick="mostrarPantalla('ornitorrinco')">
+
+                <img src="https://upload.wikimedia.org/wikipedia/commons/f/f2/Platypus.jpg">
+
+                <h3>🦆Ornitorrinco</h3>
+
+            </div>
+
+        </div>
+
+        <button onclick="mostrarPantalla('menu')">
+            ⬅ Volver
+        </button>
+
+    </div>
+
+    <!-- PLANTAS -->
+
+    <div id="plantas" class="pantalla">
+
+        <h2>🌿 Especies Vegetales</h2>
+
+        <div class="galeria">
+
+            <div class="tarjeta"
+                onclick="mostrarPantalla('taro')">
+
+                <img src="https://plantasflores.com/wp-content/uploads/2021/11/Colocasia-esculenta.jpg">
+
+                <h3>🌿 Taro</h3>
+
+            </div>
+
+            <div class="tarjeta"
+                onclick="mostrarPantalla('coco')">
+
+                <img src="https://s10.s3c.es/imag/_v0/3777x2061/d/5/2/cocos_dreamstime.jpg">
+
+                <h3>🥥 Coco</h3>
+
+            </div>
+
+            <div class="tarjeta"
+                onclick="mostrarPantalla('arbolpan')">
+
+                <img src="https://todoarboles.com/wp-content/uploads/2022/05/arbol-del-pan.jpg">
+
+                <h3>🍈 Árbol del Pan</h3>
+
+            </div>
+
+            <div class="tarjeta"
+                onclick="mostrarPantalla('camote')">
+
+                <img src="https://www.aboutespanol.com/thmb/x7PEBxJrbC8fSaREn4bOCpp-9jc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettySweetpotatoesinbasket-56d4d0993df78cfb37d9592d.jpg">
+
+                <h3>🍠 Camote</h3>
+
+            </div>
+
+            <div class="tarjeta"
+                onclick="mostrarPantalla('pandanus')">
+
+                <img src="https://http2.mlstatic.com/D_NQ_NP_774000-MLA83404649284_042025-O.webp">
+
+                <h3>🌴 Pandanus</h3>
+
+            </div>
+
+        </div>
+
+        <button onclick="mostrarPantalla('menu')">
+            ⬅ Volver
+        </button>
+
+    </div>
+  <!-- ================= FICHAS DE ANIMALES ================= -->
+
+<div id="babosa" class="pantalla ficha">
+
+    <h2>🐌 Babosa de Mar</h2>
+
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzbVmepPCj9R-o_sHnqBVbsNdk7ivqy7zjvg&s">
+
+    <p><b>Nombre científico:</b> Chromodoris kuiteri</p>
+
+    <p>
+        La babosa de mar es un pequeño animal que vive en los arrecifes de coral.
+        Tiene colores muy llamativos como azul, amarillo y blanco.
+    </p>
+
+    <p>
+        Es un invertebrado porque no tiene columna vertebral.
+    </p>
+
+    <button onclick="mostrarPantalla('invertebrados')">
+        ⬅ Categoría
+    </button>
+
+</div>
+
+
+<div id="cangrejo" class="pantalla ficha">
+
+    <h2>🦀 Cangrejo Cocotero</h2>
+
+    <img src="https://i.redd.it/e5r2a6qjm1qy.jpg">
+
+    <p><b>Nombre científico:</b> Birgus latro</p>
+
+    <p>
+        El cangrejo cocotero es el artrópodo terrestre más grande del mundo.
+        Tiene pinzas muy fuertes que le permiten abrir cocos.
+    </p>
+  <p>
+        Puede trepar árboles para buscar comida. Es un invertebrado porque no tiene huesos internos.
+    </p>
+
+    <button onclick="mostrarPantalla('invertebrados')">
+        ⬅ Categoría
+    </button>
+
+</div>
+
+
+<div id="lori" class="pantalla ficha">
+
+    <h2>🦜 Lori Arcoíris</h2>
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c2/Rainbow_lorikeet.jpg">
+
+    <p><b>Nombre científico:</b> Trichoglossus moluccanus</p>
+
+    <p>
+        El lori arcoíris es un ave muy colorida que vive en Australia. Sus plumas tienen colores azul, verde, amarillo y naranja.
+    </p>
+  <p>
+        Se alimenta de néctar, flores y frutas. Ayuda a las plantas porque transporta el polen de una flor a otra. Vive en bosques y parques.
+    </p>
+
+    <button onclick="mostrarPantalla('vertebrados')">
+        ⬅ Categoría
+    </button>
+
+</div>
+
+
+<div id="canguro" class="pantalla ficha">
+
+    <h2>🦘 Canguro Rojo</h2>
+
+    <img src="https://leyendas.gob.pe/wp-content/uploads/2021/06/Canguro-Rojo.jpg">
+
+    <p><b>Nombre científico:</b> Osphranter rufus</p>
+
+    <p>
+        El canguro rojo es uno de los animales más famosos de Australia.
+        Puede dar grandes saltos gracias a sus fuertes patas traseras.
+    </p>
+
+    <p>
+        Las hembras tienen una bolsa donde llevan a sus crías. Se alimenta de pastos y hojas. Vive en zonas secas y cálidas.
+    </p>
+
+    <button onclick="mostrarPantalla('vertebrados')">
+        ⬅ Categoría
+    </button>
+
+</div>
+
+
+<div id="ornitorrinco" class="pantalla ficha">
+
+    <h2>🦆​Ornitorrinco</h2>
+
+    <img src="https://blog.changedyslexia.org/wp-content/uploads/2022/02/ornitorrinco-pico.png">
+
+    <p><b>Nombre científico:</b> Ornithorhynchus anatinus</p>
+
+    <p>
+        El ornitorrinco vive en ríos y lagos del este de Australia.
+    </p>
+
+    <p>
+        Tiene pico parecido al de un pato, cola similar a la de un castor
+        y patas con membranas para nadar.
+    </p>
+
+    <p>
+        Se alimenta de insectos, larvas, gusanos y pequeños crustáceos. Aunque es un mamífero, pone huevos.
+    </p>
+
+    <button onclick="mostrarPantalla('vertebrados')">
+        ⬅ Categoría
+    </button>
+
+</div>
+
+
+<!-- ================= FICHAS DE PLANTAS ================= -->
+
+<div id="taro" class="pantalla ficha">
+
+    <h2>🌿 Taro</h2>
+
+    <img src="https://plantasflores.com/wp-content/uploads/2021/11/Colocasia-esculenta.jpg">
+
+    <p><b>Nombre científico:</b> Colocasia esculenta</p>
+
+    <p>
+        El taro es una planta muy importante para la alimentación en Oceanía.
+        Se cultiva por su raíz, que es rica en almidón.
+    </p>
+   <p>
+  Sus hojas son grandes y verdes. Muchas personas lo cocinan hervido o asado. Crece bien en lugares húmedos y cálidos.
+ </p>
+    <button onclick="mostrarPantalla('plantas')">
+        ⬅ Categoría
+    </button>
+
+</div>
+
+
+<div id="coco" class="pantalla ficha">
+
+    <h2>🥥 Coco</h2>
+
+    <img src="https://s10.s3c.es/imag/_v0/3777x2061/d/5/2/cocos_dreamstime.jpg">
+
+    <p><b>Nombre científico:</b> Cocos nucifera</p>
+
+    <p>
+        El coco crece en una palmera alta que vive cerca del mar.
+        Su fruto contiene agua y pulpa comestible.
+    </p>
+   <p> 
+     Las personas utilizan el coco para preparar alimentos y bebidas. También aprovechan sus hojas y fibras para hacer artesanías. Crece en zonas tropicales.
+  </p>
+
+    <button onclick="mostrarPantalla('plantas')">
+        ⬅ Categoría
+    </button>
+
+</div>
+
+
+<div id="arbolpan" class="pantalla ficha">
+
+    <h2>🍈 Árbol del Pan</h2>
+
+    <img src="https://todoarboles.com/wp-content/uploads/2022/05/arbol-del-pan.jpg">
+
+    <p><b>Nombre científico:</b> Artocarpus altilis</p>
+
+    <p>
+        Produce frutos grandes y nutritivos que constituyen un alimento
+        importante en muchas islas de Oceanía.
+    </p>
+<p>
+  Su nombre se debe a que, cuando se cocina, tiene una textura parecida al pan. Puede crecer durante muchos años y dar muchos frutos.
+  </p>
+    <button onclick="mostrarPantalla('plantas')">
+        ⬅ Categoría
+    </button>
+
+</div>
+
+
+<div id="camote" class="pantalla ficha">
+
+    <h2>🍠 Camote</h2>
+
+    <img src="https://www.aboutespanol.com/thmb/x7PEBxJrbC8fSaREn4bOCpp-9jc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettySweetpotatoesinbasket-56d4d0993df78cfb37d9592d.jpg">
+
+    <p><b>Nombre científico:</b> Ipomoea batatas</p>
+
+    <p>
+        El camote es un tubérculo (Crece bajo la tierra) dulce y nutritivo, rico en vitaminas
+        y minerales.
+    </p>
+   <p>
+   Puede ser de color naranja, blanco o morado. Se puede comer hervido, asado o en puré. Se cultiva en muchas regiones de Oceanía.
+   </p>
+
+    <button onclick="mostrarPantalla('plantas')">
+        ⬅ Categoría
+    </button>
+
+</div>
+
+
+<div id="pandanus" class="pantalla ficha">
+
+    <h2>🌴 Pandanus</h2>
+
+    <img src="https://http2.mlstatic.com/D_NQ_NP_774000-MLA83404649284_042025-O.webp">
+
+    <p><b>Nombre científico:</b> Pandanus tectorius</p>
+
+    <p>
+        Es un árbol tropical cuyas hojas se utilizan para fabricar
+        canastos y esteras.
+    </p>
+<p>
+  Sus frutos también pueden utilizarse como alimento. Posee raíces especiales que le ayudan a mantenerse firme. Crece cerca de las costas.
+  </p>
+    <button onclick="mostrarPantalla('plantas')">
+        ⬅ Categoría
+    </button>
+
+</div>
+  <!-- ================= JUEGO ================= -->
+
+<!-- ================= JUEGO ================= -->
+
+<div id="juego" class="pantalla">
+
+    <h2>🎮 Desafío de Oceanía</h2>
+
+    <div id="quiz">
+
+        <p id="contador"></p>
+
+        <div id="barraProgreso">
+            <div id="progreso"></div>
+        </div>
+
+        <h3 id="pregunta"></h3>
+
+        <div id="opciones"></div>
+
+        <p id="mensaje"></p>
+
+    </div>
+
+    <button onclick="mostrarPantalla('menu')">
+        ⬅ Volver al Menú
+    </button>
+
+</div>
+
+<!-- ================= PANTALLA FINAL ================= -->
+
+<div id="finalJuego" class="pantalla">
+
+    <div class="overlay-final">
+
+        <h1>🎉 ¡Felicitaciones!</h1>
+
+        <p>
+            Has completado las 10 preguntas sobre la biodiversidad de Oceanía.
+        </p>
+
+        <p>
+La biodiversidad de Oceanía es una de las más especiales del planeta, ya que alberga numerosas especies de animales y plantas que no se encuentran en ningún otro lugar. Proteger estos ecosistemas es fundamental para conservar su riqueza natural y el equilibrio del medio ambiente.
+        </p>
+
+        <p>
+            ¡Sigue aprendiendo y ayudando a proteger la naturaleza! 🌏🌿
+        </p>
+
+        <button onclick="mostrarPantalla('juego')">
+    🔄 Jugar otra vez
+</button>
+
+        <button onclick="mostrarPantalla('menu')">
+            🏠 Menú Principal
+        </button>
+
+    </div>
+
+</div>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
